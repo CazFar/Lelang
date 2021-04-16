@@ -1,3 +1,0 @@
-# Lelang
-:)
-Selamat daatang
