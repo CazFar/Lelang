@@ -1,1 +1,1 @@
-Berikut project bertahap saya pak, sekarang masih tahap requesr data pada laravel
+Berikut project bertahap saya pak, sekarang masih tahap input data ke database
