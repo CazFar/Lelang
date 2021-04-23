@@ -1,15 +1,29 @@
 <?php
-
+ 
 namespace App\Http\Controllers;
-
+ 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
+ 
+ 
 class PembeliController extends Controller
 {
-    public function index(){
-        $nama = "Maha Putri Yas";
-        $telepon = "081267824012";
-        $barang = ["Hp Samsung C9","Jam tangan Rolex"];
-        return view('profilpembeli',['nama' => $nama , 'telepon' => $telepon , 'barang' => $barang]);
+    public function index1()
+    {
+    	// mengambil data dari table pembeli
+    	$pembeli = DB::table('pembelis')->get();
+ 
+    	// mengirim data pembeli ke view index
+    	return view('index1',['pembelis' => $pembeli]);
+ 
     }
+
+		// method untuk menampilkan view form tambah pembeli
+		public function tambah1()
+	{
+ 
+		// memanggil view tambah
+		return view('tambah1');
+ 
+	}
 }
