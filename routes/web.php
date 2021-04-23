@@ -3,6 +3,7 @@
  use App\Http\Controllers\PenjualController;
  use App\Http\Controllers\PembeliController;
  use App\Http\Controllers\BarangController;
+ use App\Http\Controllers\DashboardController;
 
 
 /*
@@ -38,3 +39,17 @@ Route::get('pembeli', [PembeliController::class, 'index']);
 
 Route::get('formulir', [BarangController::class, 'formulir']);
 Route::post('formulir/proses', [BarangController::class, 'proses']);
+
+// route dashboard
+Route::get('dashboard', [DashboardController::class, 'home']);
+Route::get('dashboard/barang', [DashboardController::class, 'barang']);
+Route::get('dashboard/laporan', [DashboardController::class, 'laporan']);
+
+//route CRUD
+Route::get('penjual',[PenjualController::class, 'index']);
+Route::get('pembeli',[PembeliController::class, 'index1']);
+
+Route::get('penjual/tambah',[PenjualController::class, 'tambah']);
+Route::get('pembeli/tambah1',[PembeliController::class, 'tambah1']);
+
+Route::post('penjual/store',[PenjualController::class, 'store']);
