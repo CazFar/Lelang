@@ -8,7 +8,9 @@
 	<h2>Lelang.com</h2>
 	<h3>Data penjual</h3>
  
-	<a href="penjual/tambah"> Tambah penjual</a>
+	<a href="/penjual/tambah"> Tambah penjual</a>
+	|
+	<a href="/dashboard"> Kembali ke dashboard</a>
 	
 	<br/>
 	<br/>
@@ -28,9 +30,9 @@
 			<td>{{ $p->penjual_umur }}</td>
 			<td>{{ $p->penjual_alamat }}</td>
 			<td>
-				<a href="penjual/edit/{{ $p->penjual_id }}">Edit</a>
+				<a href="/penjual/edit/{{ $p->penjual_id }}">Edit</a>
 				|
-				<a href="penjual/hapus/{{ $p->penjual_id }}">Hapus</a>
+				<a href="/penjual/hapus/{{ $p->penjual_id }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach

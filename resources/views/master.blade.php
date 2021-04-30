@@ -9,11 +9,15 @@
  
 		<h2>Dashboard lelang</h2>
 		<nav>
-			<a href="dashboard">Halaman depan</a>
+			<a href="/dashboard">Halaman depan</a>
 			|
-			<a href="dashboard/barang">Barang</a>
+			<a href="/barang">Barang</a>
 			|
-			<a href="dashboard/laporan">Laporan</a>
+			<a href="/penjual">Penjual</a>
+			|
+			<a href="/pembeli">Pembeli</a>
+			|
+			<a href="/dashboard/laporan">Laporan</a>
 		</nav>
 	</header>
 	<hr/>
