@@ -1,4 +1,4 @@
 # Lelang
-Lelang disini aja yuk
+Pak Wira bisa lihat di branches master pak
 <br>
-bagian master pak
+Sekarang saya sudah melewati tahap input data, edit data, dan delete data
