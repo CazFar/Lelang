@@ -11,10 +11,6 @@ class DashboardController extends Controller
 		return view('halamandepan');
 	}
  
-	public function barang(){
-		return view('barang');
-	}
- 
 	public function laporan(){
 		return view('laporan');
 	}
